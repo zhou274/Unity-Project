@@ -1,0 +1,36 @@
+Thank you for buying my ZigZag - Endless Runner Game Template.
+
+How to start:
+* Just open the playScene in the main folder and play the game!
+* In Unity Editor use mouse buttons to play.
+* Hit T (for test) creates a pickup text message for testing purposes.
+* Hit C for a critical pickup text message.
+* At the player GameObject you can change the speed of the ball.
+
+Please leave a rating, i would really appreciate it. Thank you!
+
+Check my other Assets:
+
+Easy Swipe & Touch Controller
+https://www.assetstore.unity3d.com/en/#!/content/31255
+
+Ball Memory Train your Brain Complete Project
+https://www.assetstore.unity3d.com/en/#!/content/46726
+
+If you have any further questions or problems just contact me under the following 
+email adress: most2k2@gmail.com
+
+Find me at Facebook: https://www.facebook.com/LedBlinker
+Find me at Google+ https://plus.google.com/u/0/+MarioOstwald
+
+Regards,
+
+Mario Ostwald
+
+Changes:
+
+1.1.0: - Unity Ads added
+	   - keyboard (hit space bar) movement
+	   - added namespaces for all scripts
+	   - fixes and improvements
+	   - Materials Collection 600+ Colors included
