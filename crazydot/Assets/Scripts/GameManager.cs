@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
 		ClearScene();
 		scoreManager.ResetCurrentScore();
 	}
-
+	
 	public void ClearScene()
 	{
 		GameObject[] array = GameObject.FindGameObjectsWithTag("Obstacle");
@@ -128,7 +128,15 @@ public class GameManager : MonoBehaviour
 		trailMaterial.color = color;
 		player.GetComponent<TrailRenderer>().enabled = true;
 	}
-
+	public void ContinueGame()
+	{
+        if(uIManager.gameState == GameState.GAMEOVER)
+		{
+            player.GetComponent<TrailRenderer>().enabled = true;
+            player.GetComponent<SpriteRenderer>().enabled = true;
+            uIManager.ContinueGameOver();
+		}
+    }
 	public void GameOver()
 	{
 		if (uIManager.gameState == GameState.PLAYING)

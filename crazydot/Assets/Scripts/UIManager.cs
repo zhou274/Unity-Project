@@ -100,6 +100,17 @@ public class UIManager : MonoBehaviour
 		gameState = GameState.GAMEOVER;
 		AudioManager.Instance.PlayMusic(AudioManager.Instance.menuMusic);
 	}
+	//todo
+	public void ContinueGameOver()
+	{
+        mainMenuGui.SetActive(value: false);
+        pauseGui.SetActive(value: false);
+        gameplayGui.SetActive(value: true);
+        gameOverGui.SetActive(value: false);
+        gameState = GameState.PLAYING;
+        AudioManager.Instance.PlayEffects(AudioManager.Instance.buttonClick);
+        AudioManager.Instance.PlayMusic(AudioManager.Instance.gameMusic);
+    }
 
 	public bool IsButton()
 	{
