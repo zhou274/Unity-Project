@@ -125,8 +125,9 @@ namespace MOSoft.ZigZag
             gameOverAnimator.SetTrigger("GameOver");
             scoreTexts[1].text = score.ToString();
             int bestScore = PlayerPrefs.GetInt("bestScore", 0);
-            if (score > bestScore)
-            {
+
+            //if (score > bestScore)
+            //{
                 PlayerPrefs.SetInt("bestScore", score);
                 newHighScore.gameObject.SetActive(true);
                 background.color = new Color32(255, 118, 246, 255);
@@ -134,7 +135,7 @@ namespace MOSoft.ZigZag
                 {
                     text.color = Color.white;
                 }
-            }
+            //}
             scoreTexts[3].text = PlayerPrefs.GetInt("bestScore", 0).ToString();            
         }
     }
